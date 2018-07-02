@@ -8,9 +8,9 @@
           <element id="module-output" name="JavaEE-Dressing" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Hibernate 5.2.16-5.2.16" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.45-bin" />
           <element id="library" level="project" name="JPA 2.0-2.0" />
-          <element id="library" level="project" name="mysql-connector" />
+          <element id="library" level="project" name="Hibernate 5.2.16-5.2.16" />
           <element id="library" level="project" name="Java EE 6-Java EE 6" />
         </element>
       </element>
