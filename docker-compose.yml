@@ -1,0 +1,32 @@
+version: '3.1'
+services:
+    mariadb:
+      image: mariadb:latest
+      container_name: java-ee-dressing-mariadb
+      working_dir: /application
+      volumes:
+        - .:/application
+      environment:
+        - MYSQL_ROOT_PASSWORD=root
+        - MYSQL_DATABASE=java-ee-dressing
+        - MYSQL_USER=java-ee-dressing
+        - MYSQL_PASSWORD=java-ee-dressing
+      ports:
+        - "8158:3306"
+
+    phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      container_name: java-ee-dressing-phpmyadmin
+      links:
+        - mariadb:db
+      ports:
+        - "8258:80"
+      environment:
+        MYSQL_USERNAME: root
+        MYSQL_ROOT_PASSWORD: root
+
+networks:
+  default:
+    ipam:
+     config:
+       - subnet: 10.101.2.0/24
