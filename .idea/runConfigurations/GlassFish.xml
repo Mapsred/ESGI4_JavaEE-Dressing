@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="GlassFish" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.0" ALTERNATIVE_JRE_ENABLED="false">
+  <configuration default="false" name="GlassFish" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.0" ALTERNATIVE_JRE_ENABLED="false" show_console_on_std_err="true" show_console_on_std_out="true">
     <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
     <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
     <option name="UPDATING_POLICY" value="restart-server" />
